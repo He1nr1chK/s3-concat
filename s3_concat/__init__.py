@@ -40,6 +40,8 @@ class S3Concat:
 
         return part_keys
 
+    # Add decompression to files before adding to multipart upload job
+    
     def add_files(self, prefix):
 
         def resp_to_filelist(resp):
